@@ -27,37 +27,38 @@ body {
 
 .calculator
 {
- position: relative;
- display: grid;   
+  position: relative;
+  display: grid;   
 }
 
 .calculator .value
 {
-    position: relative;
-    grid-column: span 4;
-    height: 100px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #a7af7c;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
-    text-align: right;
-    padding: 10px;
-    font-size: 2em;
+  position: relative;
+  grid-column: span 4;
+  height: 100px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #a7af7c;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+  text-align: right;
+  padding: 10px;
+  font-size: 2em;
 
 
 }
 
 .calculator span {
-    position: relative;
-    display: grid;
-    width: 80px;
-    height: 80px;
-    margin: 8px;
-    background: linear-gradient(180deg, #2f2f2f; #3f3f3f);
-    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15), 
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+  background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15), 
     inset 0 -8px 8px rgba(0, 0, 0, 0.25),
     0 0 0 2px rgba(0, 0, 0, 0.75),
     10px 20px 25px rgba(0, 0, 0, 0.4);
@@ -65,4 +66,27 @@ body {
   user-select: none;
   cursor: pointer;
   font-weight: 400;
+  border-radius: 10px;
 }
+
+.calculator span::before 
+{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+  border-radius: 10px;
+
+
+}
+
+.calculator span  i 
+{
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
